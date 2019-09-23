@@ -1,4 +1,4 @@
-﻿Project Requirement Document
+Project Requirement Document
    Cover Page: Project Title, Team Information
    Project Description
       Provide an overview of the project (Goal, motivation, stack holders, application domain, benefits to users…)
@@ -14,7 +14,3 @@
         Detailed descriptions of Graphical User Interface…
         Detailed descriptions of Security…
         Detailed descriptions of Access Control…
-
-
-How users interact with the application:
-	The four main types of users of this application are customers, customer service staff, management staff, and kitchen staff.
