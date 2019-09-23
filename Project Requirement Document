@@ -18,3 +18,19 @@
 
 How users interact with the application:
 	The four main types of users of this application are customers, customer service staff, management staff, and kitchen staff.
+…… more later.
+
+Functions: 
+Browse the current menu
+Create an order and paying for an order
+View orders in chronological order: Kitchen staff
+Change an existing order after payment has been made: CS staff
+Change the menu (adding/deleting menu items): Management staff & chef
+View sales statistics: Management staff
+Create a user account
+Display food information
+Search for a user account 
+Look at past orders to reorder past items
+Search for specific menu items 
+Display top five bestselling items
+
