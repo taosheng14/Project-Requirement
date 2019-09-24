@@ -1,0 +1,37 @@
+﻿Project Requirement Document
+   Cover Page: Project Title, Team Information
+   Project Description
+      Provide an overview of the project (Goal, motivation, stack holders, application domain, benefits to users…)
+      System Environment
+      Structure of the system (graph based on 3-tiered architecture)
+      HW/SW used (OS, Redhat, …)
+      RDBMS Used (MySQL version)
+      Application languages…(Java, XML, SQL, GUI Builder, Designer,GTK+…etc)
+  Functional Requirements
+      A list of detailed descriptions of users and how users interact with your application
+      Describe each individual function/feature, functional process and I/O.
+   Non-functional Issues
+        Detailed descriptions of Graphical User Interface…
+        Detailed descriptions of Security…
+        Detailed descriptions of Access Control…
+
+
+How users interact with the application:
+	The four main types of users of this application are customers, customer service staff, management staff, and kitchen staff.  Each type of user will have varying degrees of access to the database.  For instance, customers will be able to create their own orders and view the menu.  Both actions require access to searching the database and adding data to it.  Customers can change their order prior to completing their order and then submitting their order once finished.  Unlike customers, kitchen staff will only be able to view orders in chronological order, they only need to fulfill the orders of the customers.  The restaurant also has customer service staff to man the self-ordering kiosks.  In order to provide adequate service to customers, service staff must be able to delete and alter orders that have not yet been completed.  Since management work at the restaurant, they are considered internal stakeholders.  There are also external stakeholders who do not deal with the day-to-day activities of the restaurant.  Both groups are under the administrative category, allowing them greater access to the database, which include querying and manipulating the database.
+This is because admins need to be able to view sale statistics and change the menu to reflect currently available ingredients, and sale items that produce the greatest profit with the lowest margins.  At the same time, management should still be able to view and change orders.
+	Customers will have the option of being registered while the other types of users must be registered.  This requirement ensures that each type of user will get certain levels of access to the database.  Both registered and unregistered users can create orders, but those who are unregistered will not be able to view past orders. 
+
+Functions: 
+Browse the current menu
+Create an order and paying for an order
+View orders in chronological order: Kitchen staff
+Change an existing order after payment has been made: CS staff
+Change the menu (adding/deleting menu items): Management staff & chef
+View sales statistics: Management staff
+Create a user account
+Display food information
+Search for a user account 
+Look at past orders to reorder past items
+Search for specific menu items 
+Display top five bestselling items
+
