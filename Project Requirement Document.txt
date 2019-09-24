@@ -16,18 +16,59 @@
         Detailed descriptions of Access Control…
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 How users interact with the application:
 	The four main types of users of this application are customers, customer service staff, management staff, and kitchen staff.  Each type of user will have varying degrees of access to the database.  For instance, customers will be able to create their own orders and view the menu.  Both actions require access to searching the database and adding data to it.  Customers can change their order prior to completing their order and then submitting their order once finished.  Unlike customers, kitchen staff will only be able to view orders in chronological order, they only need to fulfill the orders of the customers.  The restaurant also has customer service staff to man the self-ordering kiosks.  In order to provide adequate service to customers, service staff must be able to delete and alter orders that have not yet been completed.  Since management work at the restaurant, they are considered internal stakeholders.  There are also external stakeholders who do not deal with the day-to-day activities of the restaurant.  Both groups are under the administrative category, allowing them greater access to the database, which include querying and manipulating the database.
 This is because admins need to be able to view sale statistics and change the menu to reflect currently available ingredients, and sale items that produce the greatest profit with the lowest margins.  At the same time, management should still be able to view and change orders.
 	Customers will have the option of being registered while the other types of users must be registered.  This requirement ensures that each type of user will get certain levels of access to the database.  Both registered and unregistered users can create orders, but those who are unregistered will not be able to view past orders. 
 
 Functions: 
-Browse the current menu
-Create an order and paying for an order
+Browse the current menu:
+- When users press on the menu button, they are presented with the “appetizers”, “entrée”, “dessert”, and “drinks” buttons.  
+- Depending on which button they choose, the window will show the items belonging to that particular category.  The items will be listed in alphabetical order and will contain a corresponding price and a “add to order” button.
+Create an order and paying for an order:
+- An order is created when a user begins adding items to their cart.
+- Once the user is finished choosing the items they wish to order, they can choose to finish their order.
+- The system then calculates the total, presents the subtotal and total cost of their order before having the customer pay for their order.
 View orders in chronological order: Kitchen staff
-Change an existing order after payment has been made: CS staff
-Change the menu (adding/deleting menu items): Management staff & chef
-View sales statistics: Management staff
+- One logged-in, kitchen staff can view orders that must be finished for customers.
+- As orders are finished, they are removed form the list of current orders.
+- The orders should be in order based on the time that the order was paid for by the customer. 
+Change an existing order: staff
+- If customers want to change their order, a CS staff or managerial staff can alter an order if it has not yet been fulfilled by the kitchen staff.
+- If an order has been made, the staff can create a new order for the customer.  
+- If an error was made by a restaurant staff, a management staff can make the new order without charging the customer
+Change the menu (adding/deleting menu items): Admins
+- Admins can add and delete menu items.  
+- Deleting an item will ask the user to confirm that they do indeed want to go through with the deletion.
+- When adding an item, the user will be asked to enter the name of the item and its price.
+View sales statistics: Admins
+- Admins will be able to choose to view daily, weekly, monthly and yearly sales.  
+- This includes profits for the chosen time period, and how much of each item was sold in that period.
+
 Create a user account
 Display food information
 Search for a user account 
